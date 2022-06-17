@@ -6,10 +6,10 @@
 
     <groupId>TreeCapitator</groupId>
     <artifactId>treecapitator</artifactId>
-    <version>1.0</version>
+    <version>2.0</version>
     <packaging>jar</packaging>
 
-    <name>TreeCapitator2.0</name>
+    <name>TreeCapitator</name>
 
     <description>A plugin for instantly chopping down trees in Minecraft</description>
     <properties>
