@@ -2,6 +2,7 @@ package me.joey.treecapitator;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.block.Block;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -74,18 +75,17 @@ public class TreeFallEvent implements Listener {
 
         }
 
-        axeEnt.setDamage(axeEnt.getDamage() + blocksToBreak.size());
+        int resistance = 1;
+
+        if (axeEnt.hasEnchant(Enchantment.DURABILITY)){
+            resistance = axeEnt.getEnchantLevel(Enchantment.DURABILITY) + 1;
+        }
+
+        axeEnt.setDamage(axeEnt.getDamage() + (blocksToBreak.size() / resistance));
 
         for (Block block : blocksToBreak){
             block.breakNaturally();
         }
-
-
-
-
-
-
-
 
 
 
