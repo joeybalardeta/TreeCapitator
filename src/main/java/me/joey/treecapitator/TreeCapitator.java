@@ -17,7 +17,7 @@ public final class TreeCapitator extends JavaPlugin {
 
     public static ArrayList<Material> axeItems = new ArrayList<Material>();
 
-    public static int maxBlocksChopped = 100;
+    public static int maxBlocksChopped = 128;
 
     @Override
     public void onEnable() {

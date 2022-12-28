@@ -38,14 +38,25 @@ public class TreeFallEvent implements Listener {
 
         Damageable axeEnt = (Damageable) event.getPlayer().getItemInHand().getItemMeta();
 
+        int resistance = 1;
+
+        if (axeEnt.hasEnchant(Enchantment.DURABILITY)){
+            resistance = axeEnt.getEnchantLevel(Enchantment.DURABILITY) + 1;
+        }
+
         int maxDurability = event.getPlayer().getItemInHand().getType().getMaxDurability();
 
         int durability = maxDurability - axeEnt.getDamage();
-        int lastBlockCount = 0;
 
         if (durability == 1){
             return;
         }
+
+        durability = durability * resistance;
+
+        int lastBlockCount = 0;
+
+
 
 
 
@@ -73,12 +84,6 @@ public class TreeFallEvent implements Listener {
 
             lastBlockCount = blocksToBreak.size();
 
-        }
-
-        int resistance = 1;
-
-        if (axeEnt.hasEnchant(Enchantment.DURABILITY)){
-            resistance = axeEnt.getEnchantLevel(Enchantment.DURABILITY) + 1;
         }
 
         axeEnt.setDamage(axeEnt.getDamage() + (blocksToBreak.size() / resistance));
