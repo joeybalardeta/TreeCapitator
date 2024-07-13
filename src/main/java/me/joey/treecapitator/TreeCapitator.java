@@ -6,7 +6,6 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -30,6 +29,7 @@ public final class TreeCapitator extends JavaPlugin {
         treeBlocks.add(Material.OAK_LOG);
         treeBlocks.add(Material.SPRUCE_LOG);
         treeBlocks.add(Material.MANGROVE_LOG);
+        treeBlocks.add(Material.CHERRY_LOG);
         treeBlocks.add(Material.CRIMSON_STEM);
         treeBlocks.add(Material.WARPED_STEM);
 

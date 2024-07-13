@@ -6,14 +6,14 @@
 
     <groupId>TreeCapitator</groupId>
     <artifactId>treecapitator</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
     <packaging>jar</packaging>
 
     <name>TreeCapitator</name>
 
     <description>A plugin for instantly chopping down trees in Minecraft</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>18</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -68,8 +68,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.19-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <version>1.21-R0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

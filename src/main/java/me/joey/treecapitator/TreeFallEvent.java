@@ -1,6 +1,5 @@
 package me.joey.treecapitator;
 
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.meta.Damageable;

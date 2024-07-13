@@ -1,7 +1,7 @@
 name: TreeCapitator
 version: '${project.version}'
 main: me.joey.treecapitator.TreeCapitator
-api-version: 1.19
+api-version: '1.21'
 load: STARTUP
 authors: [ JoeyBalardeta ]
 description: Kills trees, makes the Lorax mad, pretty simple.
