@@ -61,13 +61,6 @@ public class TreeLogic {
             }
 
             blocksToBreak.addAll(blocksToAdd);
-
-            iterations++;
-
-            if (iterations > TreeCapitator.maxBlocksChopped * 2) {
-                TreeCapitator.getInstance().getLogger().log(Level.INFO, "TreeCapitator block check exceeded maximum iterations. Breaking loop.");
-                break;
-            }
         }
 
 

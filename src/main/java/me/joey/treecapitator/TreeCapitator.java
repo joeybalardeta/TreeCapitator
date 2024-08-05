@@ -12,7 +12,7 @@ import java.util.logging.Level;
 public final class TreeCapitator extends JavaPlugin {
     private static TreeCapitator instance;
     public String VERSION = "2.2.0";
-    public static int maxBlocksChopped = 128;
+    public static int maxBlocksChopped = 256;
 
     public static TreeCapitator getInstance(){
         return instance;
